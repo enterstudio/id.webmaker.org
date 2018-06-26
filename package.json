@@ -25,7 +25,9 @@
     "test:server": "npm run test:setup && lab -t 95",
     "watch:js": "npm run build:js -- --watch",
     "watch:css": "autoless --source-map templates/less public",
-    "server": "node web/index.js"
+    "server": "node web/index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -69,7 +71,7 @@
     "isomorphic-fetch": "2.0.1",
     "joi": "6.0.8",
     "jsx-loader": "0.12.2",
-    "less": "1.7.5",
+    "less": "2.1.0",
     "pass-test": "1.0.3",
     "pg": "4.3.0",
     "react": "0.12.2",
@@ -81,7 +83,8 @@
     "redis-url": "1.2.1",
     "scooter": "2.0.1",
     "should": "5.2.0",
-    "webpack": "1.7.3"
+    "webpack": "1.7.3",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "bulk-require": "0.2.1",
@@ -101,5 +104,6 @@
   },
   "engines": {
     "node": "^4.6.0"
-  }
+  },
+  "snyk": true
 }
