@@ -1,0 +1,27 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - autoless > less > request > hawk:
+        patched: '2019-04-27T22:40:38.316Z'
+  'npm:http-signature:20150122':
+    - autoless > less > request > http-signature:
+        patched: '2019-04-27T22:40:38.316Z'
+  'npm:lodash:20180130':
+    - hapi-bunyan > lodash:
+        patched: '2019-04-27T22:40:38.316Z'
+    - babel-loader > babel-core > babel-plugin-proto-to-assign > lodash:
+        patched: '2019-04-27T22:40:38.316Z'
+  'npm:mime:20170907':
+    - autoless > less > mime:
+        patched: '2019-04-27T22:40:38.316Z'
+    - autoless > less > request > form-data > mime:
+        patched: '2019-04-27T22:40:38.316Z'
+  'npm:request:20160119':
+    - autoless > less > request:
+        patched: '2019-04-27T22:40:38.316Z'
+  'npm:tunnel-agent:20170305':
+    - autoless > less > request > tunnel-agent:
+        patched: '2019-04-27T22:40:38.316Z'
